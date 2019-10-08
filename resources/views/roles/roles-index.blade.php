@@ -50,7 +50,7 @@
                                                                 </button>
                                                             </form>
                                                         @else
-                                                            <a class="dropdown-item" href="{{ route('roles.edit') }}">{{ __('Edit') }}</a>
+                                                            <a class="dropdown-item" href="{{ route('roles.edit', $role) }}">{{ __('Edit') }}</a>
                                                         @endif
                                                     </div>
                                                 </div>

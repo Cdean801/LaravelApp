@@ -71,7 +71,7 @@
                     <p>{{ _('Typography') }}</p>
                 </a>
             </li>
-            <li @if ($pageSlug == 'rtl') class="active " @endif>
+            {{-- <li @if ($pageSlug == 'rtl') class="active " @endif>
                 <a href="{{ route('pages.rtl') }}">
                     <i class="tim-icons icon-world"></i>
                     <p>{{ _('RTL Support') }}</p>
@@ -82,7 +82,7 @@
                     <i class="tim-icons icon-spaceship"></i>
                     <p>{{ _('Upgrade to PRO') }}</p>
                 </a>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </div>
