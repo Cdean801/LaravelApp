@@ -34,6 +34,7 @@
     },
     "autoload": {
         "psr-4": {
+            "laravelApp\\ShoppingCart\\": "packages/laravelApp/ShoppingCart/src",
             "App\\": "app/"
         },
         "classmap": [
@@ -43,6 +44,7 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "laravelApp\\ShoppingCart\\": "packages/laravelApp/ShoppingCart/src",
             "Tests\\": "tests/"
         }
     },

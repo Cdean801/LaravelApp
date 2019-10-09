@@ -1,0 +1,17 @@
+{
+    "name": "christopher/laravel-shop",
+    "description": "plugin for new laravel cms",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "Christopher Dean",
+            "email": "christopher.dean801@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "laravelApp\\ShoppingCart\\": "src/"
+        }
+    }
+}
