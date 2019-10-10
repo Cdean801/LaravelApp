@@ -13,7 +13,8 @@
         "jeremykenedy/laravel-roles": "^2.3",
         "laravel-frontend-presets/white-dashboard": "^1.0",
         "laravel/framework": "^6.0",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "stripe/stripe-php": "^7.3"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
