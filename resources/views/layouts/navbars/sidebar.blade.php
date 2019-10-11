@@ -47,10 +47,10 @@
                     <p>{{ _('Icons') }}</p>
                 </a>
             </li>
-            <li @if ($pageSlug ?? '' == 'maps') class="active " @endif>
-                <a href="{{ route('pages.maps') }}">
-                    <i class="tim-icons icon-pin"></i>
-                    <p>{{ _('Maps') }}</p>
+            <li @if ($pageSlug ?? '' == 'posts') class="active " @endif>
+                <a href="{{ route('pages.posts') }}">
+                    <i class="tim-icons icon-chat-33"></i>
+                    <p>{{ _('Create Post') }}</p>
                 </a>
             </li>
             <li @if ($pageSlug ?? '' == 'notifications') class="active " @endif>

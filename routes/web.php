@@ -20,7 +20,9 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 Route::group(['middleware' => 'auth'], function () {
 		Route::get('icons', ['as' => 'pages.icons', 'uses' => 'PageController@icons']);
-		Route::get('maps', ['as' => 'pages.maps', 'uses' => 'PageController@maps']);
+        Route::get('posts', ['as' => 'pages.posts', 'uses' => 'PostController@getDashboard']);
+        Route::post('posts', ['as' => 'pages.posts', 'uses' => 'PostController@getDashboard']);
+        // Route::get('/posts', 'PageController@posts')->name('posts')->middleware('auth');
 		Route::get('notifications', ['as' => 'pages.notifications', 'uses' => 'PageController@notifications']);
 		Route::get('rtl', ['as' => 'pages.rtl', 'uses' => 'PageController@rtl']);
 		Route::get('tables', ['as' => 'pages.tables', 'uses' => 'PageController@tables']);
@@ -101,4 +103,23 @@ Route::group(['prefix' => 'user'], function () {
         ]);
     });
 });
+
+Route::post('/createpost', [
+    'uses' => 'PostController@postCreatePost',
+    'as' => 'post.create',
+    'middleware' => 'auth'
+]);
+Route::get('/delete-post/{post_id}', [
+    'uses' => 'PostController@getDeletePost',
+    'as' => 'post.delete',
+    'middleware' => 'auth'
+]);
+Route::post('/edit', [
+    'uses' => 'PostController@postEditPost',
+    'as' => 'edit'
+]);
+Route::post('/like', [
+    'uses' => 'PostController@postLikePost',
+    'as' => 'like'
+]);
 

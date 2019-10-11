@@ -15,13 +15,13 @@ class PageController extends Controller
     }
 
     /**
-     * Display maps page
+     * Display posts page
      *
      * @return \Illuminate\View\View
      */
-    public function maps()
+    public function posts()
     {
-        return view('pages.maps');
+        return view('pages.posts');
     }
 
     /**
