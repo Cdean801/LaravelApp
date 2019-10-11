@@ -4,12 +4,14 @@
     "description": "The Laravel Framework.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "stripe"
     ],
     "license": "MIT",
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
+        "jazmy/jaz-form-builder": "dev-master",
         "jeremykenedy/laravel-roles": "^2.3",
         "laravel-frontend-presets/white-dashboard": "^1.0",
         "laravel/framework": "^6.0",

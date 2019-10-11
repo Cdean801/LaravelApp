@@ -53,10 +53,10 @@
                     <p>{{ _('Create Post') }}</p>
                 </a>
             </li>
-            <li @if ($pageSlug ?? '' == 'notifications') class="active " @endif>
-                <a href="{{ route('pages.notifications') }}">
-                    <i class="tim-icons icon-bell-55"></i>
-                    <p>{{ _('Notifications') }}</p>
+            <li @if ($pageSlug ?? '' == 'createforms') class="active " @endif>
+                <a href="{{ route('pages.createforms') }}">
+                    <i class="tim-icons icon-paper"></i>
+                    <p>{{ _('Create Form') }}</p>
                 </a>
             </li>
             <li @if ($pageSlug ?? '' == 'tables') class="active " @endif>

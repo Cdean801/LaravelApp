@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18bb21b2f3a32103a3bcb544de345bc5",
+    "content-hash": "2a5c6d0e55ab8448bfb6492b8ba10618",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -509,6 +509,43 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "jazmy/jaz-form-builder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jazmy/laravel-formbuilder.git",
+                "reference": "0fb898bf64e0fe1d74a4b1cfc8527fd926465601"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jazmy/laravel-formbuilder/zipball/0fb898bf64e0fe1d74a4b1cfc8527fd926465601",
+                "reference": "0fb898bf64e0fe1d74a4b1cfc8527fd926465601",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "jazmy\\FormBuilder\\FormBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "jazmy\\FormBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jasmine Robinson",
+                    "email": "jaz@jazmy.com"
+                }
+            ],
+            "description": "Laravel Package for Creating a Drag-and-Drop Form Builder Using JQuery Form Builder",
+            "time": "2019-01-29T03:46:40+00:00"
         },
         {
             "name": "jeremykenedy/laravel-roles",
@@ -5141,7 +5178,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "jazmy/jaz-form-builder": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
