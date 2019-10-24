@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "doctrine/dbal": "^2.9",
         "fideloper/proxy": "^4.0",
         "jeremykenedy/laravel-roles": "^2.3",
         "laravel-frontend-presets/white-dashboard": "^1.0",
