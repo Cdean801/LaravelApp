@@ -64,8 +64,8 @@ Laravel CMS
 -----------Resources---------------	
 
 -composer packagist 
-	-Laravel Roles / Jeremy kenedy https://github.com/jeremykenedy/laravel-roles
-
+	- Laravel Roles / Jeremy kenedy https://github.com/jeremykenedy/laravel-roles
+    - Dashboard Theme https://www.creative-tim.com/live/white-dashboard-laravel?start-page=/docs/getting-started/laravel-setup.html
 	
 -NPM js libraries
 	- https://interactjs.io/ ??? ( for drag and drop page builder )
