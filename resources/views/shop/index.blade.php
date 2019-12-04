@@ -15,9 +15,9 @@ Laravel Shopping Cart
 </div>
 @endif
 @foreach($products->chunk(3) as $productChunk)
-<div class="row">
+<div class="row" style="border: 1px solid #e8e8ee; background-color: #e6eae6; margin: 20px;">
     @foreach($productChunk as $product)
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-6 col-md-4" style="padding-top: 10px;">
         <div class="thumbnail">
             <img src="{{ $product->imagePath }}" alt="..." class="img-responsive">
             <div class="caption">

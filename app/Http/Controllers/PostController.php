@@ -14,6 +14,7 @@ class PostController extends Controller
         return view('pages.posts', ['posts' => $posts]);
     }
     public function postCreatePost(Request $request)
+    // creates a post in the dashboard
     {
         $this->validate($request, [
             'body' => 'required|max:1000'
@@ -27,6 +28,7 @@ class PostController extends Controller
         }
         return redirect()->route('pages.posts')->with(['message' => $message]);
     }
+    // deletes the posts from the dashboard
     public function getDeletePost($post_id)
     {
         $post = Post::where('id', $post_id)->first();

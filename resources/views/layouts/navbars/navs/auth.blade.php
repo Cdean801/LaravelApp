@@ -19,7 +19,7 @@
             <ul class="navbar-nav ml-auto">
                 <li>
                     <a href="{{ route('product.shoppingCart') }}">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart
                         <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
                     </a>
                 </li>

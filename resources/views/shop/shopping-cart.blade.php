@@ -13,7 +13,7 @@ Laravel Shopping Cart
             <li class="list-group-item">
                 <span class="badge">{{ $product['qty'] }}</span>
                 <strong>{{ $product['item']['title'] }}</strong>
-                <span class="label label-success">{{ $product['price'] }}</span>
+                <span class="label label-success">${{ $product['price'] }}</span>
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary btn-xs dropdown-toogle" data-toggle="dropdown">Action
                         <span class="caret"></span></button>

@@ -1,7 +1,50 @@
 @extends('layouts.app', ['activePage' => 'posts', 'titlePage' => __('posts')])
-
 {{-- @extends('layouts.master') --}}
-
+<style>
+  .new-post {
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .new-post header,
+  .posts header {
+  margin-bottom: 20px;
+  }
+  
+  .posts .post {
+  padding-left: 10px;
+  border-left: 3px solid #a21b24;
+  margin-bottom: 30px;
+  }
+  
+  .posts .post .info {
+  color: #aaa;
+  font-style: italic;
+  }
+  
+  .error,
+  .success {
+  text-align: center;
+  }
+  
+  .error {
+  border: 1px solid red;
+  background-color: #f9b5af;
+  color: red;
+  }
+  
+  .error ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .success {
+  border: 1px solid green;
+  background-color: #d1f9da;
+  color: green;
+  }
+  </style>
 @section('content')
 @include('includes.message-block')
 <section class="row new-post">
@@ -29,18 +72,18 @@
       <div class="info">
         Posted by {{ $post->user->first_name }} on {{ $post->created_at }}
       </div>
-      {{-- <div class="interaction">
+      <div class="interaction">
         <a href="#"
-          class="like">{{ Auth::user()->likes()->where('post_id', $post->id)->first() ? Auth::user()->likes()->where('post_id', $post->id)->first()->like == 1 ? 'You like this post' : 'Like' : 'Like'  }}</a>
+          class="like">Like</a>
         |
         <a href="#"
-          class="like">{{ Auth::user()->likes()->where('post_id', $post->id)->first() ? Auth::user()->likes()->where('post_id', $post->id)->first()->like == 0 ? 'You don\'t like this post' : 'Dislike' : 'Dislike'  }}</a>
+          class="like">dislike</a>
         @if(Auth::user() == $post->user)
         |
         <a href="#" class="edit">Edit</a> |
         <a href="{{ route('post.delete', ['post_id' => $post->id]) }}">Delete</a>
         @endif
-      </div> --}}
+      </div>
     </article>
     @endforeach
   </div>
@@ -75,4 +118,7 @@
         var urlEdit = '{{ route('edit') }}';
         var urlLike = '{{ route('like') }}';
 </script>
+
+
+
 @endsection
