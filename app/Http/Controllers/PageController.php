@@ -44,6 +44,11 @@ class PageController extends Controller
         return view('pages.createforms');
     }
 
+    // returns the form view for building the form
+    public function buildform()
+    {
+        return view('pages.createnewform');
+    }
     /**
      * Display rtl page
      *

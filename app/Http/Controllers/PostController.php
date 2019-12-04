@@ -20,6 +20,7 @@ class PostController extends Controller
         ]);
         $post = new Post();
         $post->body = $request['body'];
+        // $request->user()->posts()->save($post);
         $message = 'There was an error';
         if ($request->user()->posts()->save($post)) {
             $message = 'Post successfully created!';

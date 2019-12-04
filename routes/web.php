@@ -23,7 +23,8 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('posts', ['as' => 'pages.posts', 'uses' => 'PostController@getDashboard']);
         Route::post('posts', ['as' => 'pages.posts', 'uses' => 'PostController@getDashboard']);
         // Route::get('/posts', 'PageController@posts')->name('posts')->middleware('auth');
-		Route::get('createforms', ['as' => 'pages.createforms', 'uses' => 'PageController@createforms']);
+        Route::get('createforms', ['as' => 'pages.createforms', 'uses' => 'PageController@createforms']);
+        Route::get('form', ['as' => 'pages.createnewform', 'uses' => 'PageController@buildform']);
 		Route::get('rtl', ['as' => 'pages.rtl', 'uses' => 'PageController@rtl']);
 		Route::get('tables', ['as' => 'pages.tables', 'uses' => 'PageController@tables']);
 		Route::get('typography', ['as' => 'pages.typography', 'uses' => 'PageController@typography']);

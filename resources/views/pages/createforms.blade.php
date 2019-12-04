@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.app')
 
 {{-- @extends('formbuilder::layout') --}}
 
@@ -13,7 +13,7 @@
 
                         <div class="btn-toolbar float-md-right" role="toolbar">
                             <div class="btn-group" role="group" aria-label="Third group">
-                                <a href="" class="btn btn-primary btn-sm">
+                                <a href="{{ route('pages.createnewform') }}" class="btn btn-primary btn-sm">
                                     <i class="fa fa-plus-circle"></i> Create a New Form
                                 </a>
 
@@ -48,26 +48,26 @@
                                 <td>{{ $form->allowsEdit() ? 'YES' : 'NO' }}</td>
                                 <td>{{ $form->submissions_count }}</td>
                                 <td>
-                                    {{-- <a href="{{ route('formbuilder::forms.submissions.index', $form) }}" --}}
+                                    <a href="{{ route('formbuilder::forms.submissions.index', $form) }}"
                                         class="btn btn-primary btn-sm"
                                         title="View submissions for form '{{ $form->name }}'">
                                         <i class="fa fa-th-list"></i> Data
                                     </a>
-                                    {{-- <a href="{{ route('formbuilder::forms.show', $form) }}" --}}
+                                    <a href="{{ route('formbuilder::forms.show', $form) }}"
                                         class="btn btn-primary btn-sm" title="Preview form '{{ $form->name }}'">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    {{-- <a href="{{ route('formbuilder::forms.edit', $form) }}" --}}
+                                    <a href="{{ route('formbuilder::forms.edit', $form) }}"
                                         class="btn btn-primary btn-sm" title="Edit form">
                                         <i class="fa fa-pencil"></i>
                                     </a>
-                                    {{-- <button class="btn btn-primary btn-sm clipboard"
+                                    <button class="btn btn-primary btn-sm clipboard"
                                         data-clipboard-text="{{ route('formbuilder::form.render', $form->identifier) }}"
                                         data-message="" data-original="" title="Copy form URL to clipboard">
                                         <i class="fa fa-clipboard"></i>
-                                    </button> --}}
+                                    </button>
 
-                                    {{-- <form action="{{ route('formbuilder::forms.destroy', $form) }}" method="POST" --}}
+                                    <form action="{{ route('formbuilder::forms.destroy', $form) }}" method="POST"
                                         id="deleteFormForm_{{ $form->id }}" class="d-inline-block">
                                         @csrf
                                         @method('DELETE')

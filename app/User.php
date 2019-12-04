@@ -51,7 +51,7 @@ class User extends Authenticatable
     }
     public function posts()
     {
-        return $this->belongsTo('App\Post');
+        return $this->hasMany('App\Post');
     }
 
 }
