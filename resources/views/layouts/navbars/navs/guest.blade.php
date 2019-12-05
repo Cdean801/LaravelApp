@@ -1,3 +1,18 @@
+<style>
+    .navbar-brand{
+        color: black !important;
+        background:
+        #b03a9e;
+        border-radius: 4px 4px 5px 3pc;
+    }
+    .nav-link{
+        color: black !important;
+    }
+    .nav-item a{
+        color: black !important;
+    }
+    </style>
+
 <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent fixed-top">
     <div class="container-fluid">
         <div class="navbar-wrapper">
@@ -10,6 +25,7 @@
             </div>
             <a class="navbar-brand" href="{{ route('product.index') }}">Services</a>
         </div>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -17,10 +33,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
-
+                    
                 <li class="nav-item">
                     <a href="{{ route('home') }}" class="nav-link text-primary">
                         <i class="tim-icons icon-minimal-left"></i> {{ _('Back to Dashboard') }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('landing') }}" class="nav-link text-primary">
+                        <i class="tim-icons"></i> {{ _('Home') }}
                     </a>
                 </li>
                 <li class="nav-item">

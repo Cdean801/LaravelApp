@@ -1,5 +1,6 @@
 @extends('layouts.app', ['class' => 'login-page', 'page' => _('Login Page'), 'contentClass' => 'login-page'])
-
+<link rel="stylesheet" type="text/css" href="white/css/welcomepage.css" media="all" />
+<link rel="stylesheet" type="text/css" href="white/css/bootstrap.min.css" media="all" />
 @section('content')
     <div class="col-md-10 text-center ml-auto mr-auto">
         <h3 class="mb-5">Please create an account to log in! </h3>

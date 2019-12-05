@@ -10,6 +10,10 @@ use Auth;
 
 class UserController extends Controller
 {
+    public function landing()
+    {
+        return view('welcome');
+    }
     /**
      * Display a listing of the users
      *

@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/landing', 'UserController@landing')->name('landing');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
@@ -74,6 +76,7 @@ Route::post('/checkout', [
     'as' => 'checkout',
     'middleware' => 'auth'
 ]);
+
 Route::group(['prefix' => 'user'], function () {
     Route::group(['middleware' => 'guest'], function () {
         Route::get('/signup', [
@@ -104,7 +107,7 @@ Route::group(['prefix' => 'user'], function () {
         ]);
     });
 });
-
+// routes for creating and delting posts or editing and liking
 Route::post('/createpost', [
     'uses' => 'PostController@postCreatePost',
     'as' => 'post.create',

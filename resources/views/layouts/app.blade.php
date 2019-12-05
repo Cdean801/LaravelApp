@@ -50,7 +50,7 @@
                 </div>
             </div>
         @endauth
-        <div class="fixed-plugin">
+        {{-- <div class="fixed-plugin">
             <div class="dropdown show-dropdown">
                 <a href="#" data-toggle="dropdown">
                 <i class="fa fa-cog fa-2x"> </i>
@@ -82,7 +82,7 @@
                     <a class="github-button" href="https://github.com/creativetimofficial/white-dashboard-laravel" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
                 </li>
                 </ul>
-            </div>
+            </div> --}}
         </div>
         <script src="{{ asset('white') }}/js/core/jquery.min.js"></script>
         <script src="{{ asset('white') }}/js/core/popper.min.js"></script>

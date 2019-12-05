@@ -10,6 +10,7 @@
             </div>
             <a class="navbar-brand" href="{{ route('product.index') }}">Services</a>
         </div>
+        <a class="navbar-brand" href="{{ route('product.index') }}">Services</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-bar navbar-kebab"></span>
             <span class="navbar-toggler-bar navbar-kebab"></span>
