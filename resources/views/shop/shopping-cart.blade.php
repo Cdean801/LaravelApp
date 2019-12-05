@@ -4,6 +4,9 @@
 Laravel Shopping Cart
 @endsection
 
+<link rel="stylesheet" type="text/css" href="white/css/welcomepage.css" media="all" />
+<link rel="stylesheet" type="text/css" href="white/css/bootstrap.min.css" media="all" />
+
 @section('content')
 @if(Session::has('cart'))
 <div class="row">

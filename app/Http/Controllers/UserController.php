@@ -14,6 +14,10 @@ class UserController extends Controller
     {
         return view('welcome');
     }
+    public function info()
+    {
+        return view('users.info');
+    }
     /**
      * Display a listing of the users
      *

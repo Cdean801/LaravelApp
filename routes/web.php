@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/landing', 'UserController@landing')->name('landing');
+Route::get('/info', 'UserController@info')->name('info');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');

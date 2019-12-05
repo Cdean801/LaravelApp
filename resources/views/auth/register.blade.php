@@ -1,5 +1,7 @@
 @extends('layouts.app', ['class' => 'register-page', 'page' => _('Register Page'), 'contentClass' => 'register-page'])
 
+<link rel="stylesheet" type="text/css" href="white/css/welcomepage.css" media="all" />
+<link rel="stylesheet" type="text/css" href="white/css/bootstrap.min.css" media="all" />
 @section('content')
     <div class="row">
         <div class="col-md-5 ml-auto">
