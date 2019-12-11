@@ -15,8 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// nav pages
 Route::get('/landing', 'UserController@landing')->name('landing');
 Route::get('/info', 'UserController@info')->name('info');
+Route::get('/services', 'UserController@servicespage')->name('services');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');

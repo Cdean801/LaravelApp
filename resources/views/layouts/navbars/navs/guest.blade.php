@@ -45,6 +45,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('services') }}" class="nav-link text-primary">
+                        <i class="tim-icons"></i> {{ _('services') }}
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('info') }}" class="nav-link text-primary">
                         <i class="tim-icons"></i> {{ _('info') }}
                     </a>

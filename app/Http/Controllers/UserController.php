@@ -18,6 +18,10 @@ class UserController extends Controller
     {
         return view('users.info');
     }
+    public function servicespage()
+        {
+        return view('users.services');
+    }
     /**
      * Display a listing of the users
      *
