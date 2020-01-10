@@ -21,7 +21,7 @@ Laravel CMS
 		- payeezy )
 	
 - create page ( main package)
-	- drag and drop page creator?
+	- drag and drop page creator? -Possible resource(https://bevacqua.github.io/dragula/)
 	- raw html box
 	
 - site options ( main package)
