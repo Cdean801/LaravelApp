@@ -42,6 +42,7 @@ Laravel CMS
 	- mass email, notifications and text messages to users
 	- AI for marketing cpa and click throughs( reperchasing ads and stopping ads for better cliks and rates)
 	- connect social accounts, twitter, pinterst, facebook, IG, tiktok?, youtube.
+    - full through tracking for all platforms( pintrest) 
 	- mailchimp intergration
 	- active campaign intergration
 	- hubspot intergration
